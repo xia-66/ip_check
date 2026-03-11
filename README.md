@@ -1,8 +1,3 @@
-既然脚本名称已由 `check_youtube_region.sh` 改为 `ip_check.sh`，且增加了 IP 检测和 `.env` 配置文件支持，我们需要更新 `README.md` 以反映最新的项目状态。
-
-以下是更新后的 `README.md` 内容，你可以直接替换原文件：
-
----
 
 ```markdown
 # IP & YouTube Region 监测工具 (ip_check.sh)
