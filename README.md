@@ -49,13 +49,18 @@ cd /opt/youtube && nano .env
 ## 🛠️ 自动化运维
 
 ### 计划任务 (Crontab)
+设置上海时区
+```
+sudo timedatectl set-timezone Asia/Shanghai
+```
 
-建议每 6 小时自动执行一次检测，保持状态同步：
+每天上午 8 点自动执行一次检测：
+```
+crontab -e
+```
 
 ```bash
-# 添加到当前用户的 crontab 中
-(crontab -l 2>/dev/null; echo "0 */6 * * * /bin/bash /opt/youtube/ip_check.sh > /dev/null 2>&1") | crontab -
-
+0 8 * * * /bin/bash /opt/youtube/ip_check.sh >> /opt/youtube/ip_check.log 2>&1
 ```
 
 ### 常见问题 (Troubleshooting)
