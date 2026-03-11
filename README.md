@@ -33,7 +33,7 @@ curl -sSL https://raw.githubusercontent.com/xia-66/ip_check/main/install.sh | ba
 安装完成后，请编辑 `.env` 文件配置您的机器人 Token：
 
 ```bash
-cd /opt/youtube && vi .env
+cd /opt/youtube && nano .env
 
 ```
 
