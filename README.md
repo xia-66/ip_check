@@ -43,6 +43,7 @@ cd /opt/youtube && nano .env
 | `TG_BOT_TOKEN` | Telegram 机器人 Token | `123456:ABC-DEF...` |
 | `TG_CHAT_ID` | 接收消息的 Chat ID | `987654321` |
 | `WECHAT_WEBHOOK` | 企业微信 Webhook 地址 | `https://qyapi.weixin...` |
+| `NOTIFY_ON_CHANGE_ONLY` | IP区域发生改变时推送 | `true` |
 
 ---
 
